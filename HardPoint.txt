@@ -1,0 +1,8 @@
+잘 안되고, 모르겠는 거
+1. 모듈로서 구현하여 dynamoAPI폴더 안에 dynamoDB.js에서 DB 관련 createTable,deleteTable 부터 insert,update,select,delete를 모듈로 구현하고 싶었지만,
+   restapi.js에서 모듈 호출 후 비동기 방식이라 리턴 값을 안 받고 걍 진행;;; 결국, restapi에 다 때려 박음....
+2. 날짜쿼리 실패.
+   uid를 key로 설정하여 Table 생성, 그 후 datetime 컬럼과 testdata 컬럼을 추가하여 Insert 함.
+   쿼리 할 때, key 값이 필수적으로 들어가야 하는듯? 그래서 날짜만 알고 key인 uid 값을 모르니 쿼리 못함. ㅠ
+3. Tombstone이 무슨 소린지 모르겠음... 구글링도 안 나옴... 묘비만 나옴....
+   Tombstone이라는 컬럼 추가해서 flag update 하라는 뜻인가? 일단 패스
